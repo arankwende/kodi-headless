@@ -3,7 +3,7 @@ FROM debian:buster as buildstage
 #ARG KODI_NAME="Leia"
 #ARG KODI_VERSION="18.8"
 ARG KODI_NAME="Matrix"
-ARG KODI_VERSION="19.0"
+ARG KODI_VERSION="19.0a2"
 
 ARG DEBIAN_FRONTEND="noninteractive"
 COPY dpkg_excludes /etc/dpkg/dpkg.cfg.d/excludes
