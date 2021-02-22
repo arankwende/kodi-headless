@@ -108,7 +108,6 @@ RUN mkdir /tmp/kodi_src/build && cd /tmp/kodi_src/build && \
 RUN cp /tmp/kodi_src/tools/EventClients/Clients/KodiSend/kodi-send.py /tmp/kodi_build/usr/bin/kodi-send && \
   mkdir -p /tmp/kodi_build/usr/lib/python2.7/ && cp /tmp/kodi_src/tools/EventClients/lib/python/xbmcclient.py /tmp/kodi_build/usr/lib/python2.7/xbmcclient.py
 
-
 FROM debian:buster
 
 MAINTAINER milaq
