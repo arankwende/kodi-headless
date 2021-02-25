@@ -64,7 +64,7 @@ RUN echo "deb http://deb.debian.org/debian buster-backports main non-free" > /et
 COPY kodi-headless.patch /tmp/kodi-headless.patch
 
 RUN mkdir -p /tmp/kodi_src && \
-  curl -o /tmp/kodi.tar.gz -L "https://github.com/xbmc/xbmc/archive/${KODI_VERSION}-${KODI_NAME}.tar.gz" && \
+  curl -o /tmp/kodi.tar.gz -L "https://github.com/xbmc/xbmc/archive/19.0-Matrix.tar.gz" && \
   tar xf /tmp/kodi.tar.gz -C /tmp/kodi_src --strip-components=1 && \
   cd /tmp/kodi_src && \
   git apply /tmp/kodi-headless.patch
